@@ -37,28 +37,33 @@ function obtenerSaludo(nombre) {
    // Toma el string "nombre" y concatena otra string en la cadena para que tome la siguiente forma:
    // Ejemplo: "Martin" ---> "Hola Martin!"
    // Tu código:
+   return 'Hola ' + nombre + '!'
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
    // Retornar el área de un rectángulo teniendo su altura y ancho.
    // Tu código:
+   return alto * ancho
 }
 
 function retornarPerimetro(lado) {
    // La función recibe como argumento la medida de un lado de un rectángulo.
    // Debes retornar su perímetro.
    // Tu código:
+   return lado * 4
 }
 
 function areaDelTriangulo(base, altura) {
    // Calcula el área de un triángulo y retorna el resultado.
    // Tu código:
+   return (base * altura) / 2
 }
 
 function deEuroAdolar(euro) {
    // Supongamos que 1 euro equivale a 1.20 dólares.
    // Debes calcular el valor recibido como argumento pasándolo a dolares.
    // Tu código:
+   return euro * 1.20
 }
 
 function esVocal(letra) {
@@ -66,6 +71,11 @@ function esVocal(letra) {
    // Si el usuario ingresa un string de más de un caracter debes retornar el mensaje: "Dato incorrecto".
    // Si no es vocal, tambien debe retornar "Dato incorrecto".
    // Tu código:
+   if (letra == 'A' || letra == 'E' || letra == 'I' || letra == 'O' || letra == 'U' || letra == 'a' || letra == 'e' || letra == 'i' || letra == 'o' || letra == 'u' ){
+      return 'Es vocal'
+   } if (letra !== 'A' || letra !== 'E' || letra !== 'I' || letra !== 'O' || letra !== 'U' || letra !== 'a' || letra !== 'e' || letra !== 'i' || letra !== 'o' || letra !== 'u' ){
+      return 'Dato incorrecto'
+   } 
 }
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
